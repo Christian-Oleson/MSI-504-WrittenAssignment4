@@ -5,6 +5,7 @@ import PersonalInfo from "./personalInfo";
 import InsuranceInfo from "./insuranceInfo";
 import SurgeryInfo from "./surgeryInfo";
 import ImmunizationInfo from "./immunizationInfo";
+import PainInfo from "./painInfo";
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
               <SurgeryInfo />
               <br/>
               <ImmunizationInfo />
+              <br/>
+              <PainInfo />
           </Paper>
       </header>
     </div>
