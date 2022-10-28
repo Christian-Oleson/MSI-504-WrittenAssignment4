@@ -14,8 +14,8 @@ export default function SurgeryInfo() : JSX.Element {
         // @ts-ignore
         let listItem: JSX.Element = null;
 
-        if (value == "yes") {
-            let listItem = <h3>Hello1</h3>
+        if (value === "yes") {
+            listItem = <h3>Hello1</h3>
         }
 
         return listItem;
@@ -28,7 +28,7 @@ export default function SurgeryInfo() : JSX.Element {
         setValue((event.target as HTMLInputElement).value);
 
         console.log(value);
-        if (value == "yes") {
+        if (value === "yes") {
             SurgeryInfo();
         }
     };
