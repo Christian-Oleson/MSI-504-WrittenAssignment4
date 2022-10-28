@@ -7,30 +7,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import React from "react";
 
-let num: number = 0;
-
 export default function SurgeryInfo() : JSX.Element {
-    const SurgeryInfo = () => {
-        // @ts-ignore
-        let listItem: JSX.Element = null;
-
-        if (value === "yes") {
-            listItem = <h3>Hello1</h3>
-        }
-
-        return listItem;
-    }
 
     const [value, setValue] = React.useState('no');
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        num++;
-        console.log(num);
         setValue((event.target as HTMLInputElement).value);
-
-        console.log(value);
-        if (value === "yes") {
-            SurgeryInfo();
-        }
     };
 
     return <Paper elevation={3} variant="outlined">
@@ -58,7 +39,11 @@ export default function SurgeryInfo() : JSX.Element {
 }
 
 function ListItem(props: IListItem) {
-    return <h3>Hello! {props.stringValue}</h3>
+    if (props.stringValue === "yes") {
+        return <h3>Hello! {props.stringValue}</h3>
+    }
+
+    return <div></div>
 }
 
 interface IListItem {
