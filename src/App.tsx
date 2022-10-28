@@ -4,6 +4,7 @@ import './App.css';
 import PersonalInfo from "./personalInfo";
 import InsuranceInfo from "./insuranceInfo";
 import SurgeryInfo from "./surgeryInfo";
+import ImmunizationInfo from "./immunizationInfo";
 
 function App() {
     return (
@@ -16,6 +17,8 @@ function App() {
               <InsuranceInfo />
               <br/>
               <SurgeryInfo />
+              <br/>
+              <ImmunizationInfo />
           </Paper>
       </header>
     </div>

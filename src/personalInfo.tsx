@@ -7,7 +7,7 @@ export default function PersonalInfo() : JSX.Element {
     return <Paper elevation={3} variant="outlined">
         <h2>Personal Information</h2>
         <Grid container padding={1} spacing={1}>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -15,7 +15,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -23,7 +23,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -31,7 +31,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -39,16 +39,16 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
                     label="Address Line 2"
                     variant="standard" />
             </Grid>
-            <Grid  xs={4}>
+            <Grid xs={6} sm={4} md={4}>
             </Grid>
-            <Grid item  xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -56,7 +56,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item  xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -64,7 +64,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item  xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -72,7 +72,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -80,7 +80,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"
@@ -88,7 +88,7 @@ export default function PersonalInfo() : JSX.Element {
                     required
                     variant="standard" />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="outlined-basic"

@@ -6,6 +6,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import React from "react";
+import TextField from "@mui/material/TextField";
 
 export default function SurgeryInfo() : JSX.Element {
 
@@ -40,7 +41,16 @@ export default function SurgeryInfo() : JSX.Element {
 
 function ListItem(props: IListItem) {
     if (props.stringValue === "yes") {
-        return <h3>Hello! {props.stringValue}</h3>
+        return <Grid item xs={6} sm={4} md={4}>
+                <TextField
+                    fullWidth
+                    id="outlined-basic"
+                    label="List of Surgeries"
+                    maxRows={40}
+                    multiline
+                    placeholder="Submit your surgeries, one per line, with a date DD-MM-YYYY"
+                    variant="standard" />
+            </Grid>
     }
 
     return <div></div>
