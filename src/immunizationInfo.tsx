@@ -12,7 +12,7 @@ export default function ImmunizationInfo(): JSX.Element {
 }
 
 function ListItem() {
-    return <Grid item xs={6} sm={4} md={4}>
+    return <Grid item xs={12} sm={12} md={12} lg={12}>
             <TextField
                 fullWidth
                 id="outlined-basic"

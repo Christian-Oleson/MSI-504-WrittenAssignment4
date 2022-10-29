@@ -33,7 +33,9 @@ export default function PainInfo(): JSX.Element {
                     </RadioGroup>
                 </FormControl>
             </Grid>
-            <ListItem stringValue={value} />
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+                <ListItem stringValue={value} />
+            </Grid>
         </Grid>
     </Paper>
 }
@@ -45,10 +47,8 @@ function ListItem(props: IListItem) {
     };
 
     if (props.stringValue === "yes") {
-        return <Grid>
-            <FormControl>
+        return <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">What type of pain are you experiencing?</FormLabel>
-                <Grid container padding={1} spacing={1}>
                     <RadioGroup
                         row
                         aria-labelledby="demo-radio-buttons-group-label"
@@ -65,9 +65,7 @@ function ListItem(props: IListItem) {
                             id="outlined-basic"
                             label="How long does your pain last?"
                             variant="standard" />
-                </Grid>
             </FormControl>
-        </Grid>
     }
 
     return <div></div>

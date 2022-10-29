@@ -18,7 +18,7 @@ export default function SurgeryInfo() : JSX.Element {
     return <Paper elevation={3} variant="outlined">
         <h2>Surgery Information</h2>
         <Grid container padding={1} spacing={1}>
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
                 <FormControl>
                     <FormLabel id="demo-radio-buttons-group-label">Have you had surgery before?</FormLabel>
                     <RadioGroup
@@ -34,7 +34,9 @@ export default function SurgeryInfo() : JSX.Element {
                     </RadioGroup>
                 </FormControl>
             </Grid>
-            <ListItem stringValue={value} />
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+                <ListItem stringValue={value} />
+            </Grid>
         </Grid>
     </Paper>
 }
