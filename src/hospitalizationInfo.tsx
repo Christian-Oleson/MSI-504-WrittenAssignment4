@@ -8,25 +8,25 @@ import Radio from "@mui/material/Radio";
 import React from "react";
 import TextField from "@mui/material/TextField";
 
-export default function SurgeryInfo() : JSX.Element {
+export default function HospitalizationInfo() : JSX.Element {
 
-    const [value, setValue] = React.useState('no');
+    const [hValue, setHValue] = React.useState('no');
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setValue((event.target as HTMLInputElement).value);
+        setHValue((event.target as HTMLInputElement).value);
     };
 
     return <Paper elevation={3} variant="outlined">
-        <h2>Surgery Information</h2>
+        <h2>Hospitalization Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <FormControl>
-                    <FormLabel id="demo-radio-buttons-group-label">Have you had surgery before?</FormLabel>
+                    <FormLabel id="demo-radio-buttons-group-label">Have you ever been hospitalized?</FormLabel>
                     <RadioGroup
                         row
                         aria-labelledby="demo-radio-buttons-group-label"
                         defaultValue="no"
                         name="radio-buttons-group"
-                        value={value}
+                        value={hValue}
                         onChange={handleChange}
                     >
                         <FormControlLabel value="yes" control={<Radio />} label="Yes" />
@@ -35,7 +35,7 @@ export default function SurgeryInfo() : JSX.Element {
                 </FormControl>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
-                <ListItem stringValue={value} />
+                <ListItem stringValue={hValue} />
             </Grid>
         </Grid>
     </Paper>
@@ -47,10 +47,10 @@ function ListItem(props: IListItem) {
             <TextField
                 fullWidth
                 id="outlined-basic"
-                label="List of Surgeries"
+                label="List of Hospitalizations"
                 maxRows={40}
                 multiline
-                placeholder="Submit your surgeries, one per line, with a date MM-YYYY"
+                placeholder="Submit your hospitalizations, one per line, with a date MM-YYYY"
                 variant="standard" />
         </Grid>
     }

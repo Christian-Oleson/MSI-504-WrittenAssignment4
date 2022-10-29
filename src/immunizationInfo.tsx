@@ -19,7 +19,7 @@ function ListItem() {
                 label="List of Immunizations"
                 maxRows={40}
                 multiline
-                placeholder="Submit your immunizations, one per line, with a date DD-MM-YYYY"
+                placeholder="Submit your immunizations, one per line, with a date MM-YYYY"
                 variant="standard" />
         </Grid>
 }

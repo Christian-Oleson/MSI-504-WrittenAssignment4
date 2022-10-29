@@ -6,6 +6,11 @@ import InsuranceInfo from "./insuranceInfo";
 import SurgeryInfo from "./surgeryInfo";
 import ImmunizationInfo from "./immunizationInfo";
 import PainInfo from "./painInfo";
+import EmployerInfo from './employerInfo';
+import AppointmentInfo from "./appointmentInfo";
+import FamilyInfo from "./familyInfo";
+import MedicalHistory from './medicalHistory';
+import HospitalizationInfo from './hospitalizationInfo';
 
 function App() {
     return (
@@ -15,11 +20,21 @@ function App() {
           <Paper elevation={5} variant="outlined" sx={{p: 2}}>
               <PersonalInfo />
               <br/>
+              <FamilyInfo />
+              <br/>
+              <MedicalHistory />
+              <br/>
+              <EmployerInfo />
+              <br/>
               <InsuranceInfo />
+              <br/>
+              <HospitalizationInfo />
               <br/>
               <SurgeryInfo />
               <br/>
               <ImmunizationInfo />
+              <br/>
+              <AppointmentInfo />
               <br/>
               <PainInfo />
           </Paper>

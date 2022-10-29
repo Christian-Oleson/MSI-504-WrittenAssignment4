@@ -35,6 +35,26 @@ export default function PersonalInfo() : JSX.Element {
                 <TextField
                     fullWidth
                     id="outlined-basic"
+                    label="Social Security Number"
+                    required
+                    type="number"
+                    variant="standard" />
+            </Grid>
+            <Grid item xs={6} sm={4} md={4}>
+                <TextField
+                    fullWidth
+                    id="outlined-basic"
+                    label="Phone Number"
+                    required
+                    type="tel"
+                    variant="standard" />
+            </Grid>
+            <Grid xs={6} sm={4} md={4}>
+            </Grid>
+            <Grid item xs={6} sm={4} md={4}>
+                <TextField
+                    fullWidth
+                    id="outlined-basic"
                     label="Address Line 1"
                     required
                     variant="standard" />
@@ -71,30 +91,6 @@ export default function PersonalInfo() : JSX.Element {
                     label="Zip Code"
                     required
                     type="number"
-                    variant="standard" />
-            </Grid>
-            <Grid item xs={6} sm={4} md={4}>
-                <TextField
-                    fullWidth
-                    id="outlined-basic"
-                    label="Phone Number"
-                    required
-                    type="tel"
-                    variant="standard" />
-            </Grid>
-            <Grid item xs={6} sm={4} md={4}>
-                <TextField
-                    fullWidth
-                    id="outlined-basic"
-                    label="Employer"
-                    required
-                    variant="standard" />
-            </Grid>
-            <Grid item xs={6} sm={4} md={4}>
-                <TextField
-                    fullWidth
-                    id="outlined-basic"
-                    label="Office Phone"
                     variant="standard" />
             </Grid>
         </Grid>
