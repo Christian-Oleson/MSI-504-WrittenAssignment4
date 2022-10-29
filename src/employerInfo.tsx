@@ -15,15 +15,15 @@ export default function EmployerInfo() : JSX.Element {
         setEmployerValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={3} variant="outlined">
+    return <Paper elevation={12}>
         <h2>Employer Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <FormControl>
-                    <FormLabel id="demo-radio-buttons-group-label">Are you currently employed?</FormLabel>
+                    <FormLabel id="currently-employed-radio-buttons-group-label">Are you currently employed?</FormLabel>
                     <RadioGroup
                         row
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        id="employed-radio-buttons-group-label"
                         defaultValue="no"
                         name="radio-buttons-group"
                         value={employerValue}
@@ -46,7 +46,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
-                    id="outlined-basic"
+                    id="employer-name"
                     label="Employer Name"
                     required
                     variant="standard" />
@@ -63,7 +63,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
-                        id="outlined-basic"
+                        id="employer-address-line-1"
                         label="Employer Address Line 1"
                         required
                         variant="standard" />
@@ -71,7 +71,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
-                        id="outlined-basic"
+                        id="employer-address-line-2"
                         label="Employer Address Line 2"
                         variant="standard" />
                 </Grid>
@@ -80,7 +80,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
-                        id="outlined-basic"
+                        id="employer-city"
                         label="Employer City"
                         required
                         variant="standard" />
@@ -88,7 +88,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
-                        id="outlined-basic"
+                        id="employer-state"
                         label="Employer State"
                         required
                         variant="standard" />
@@ -96,7 +96,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
-                        id="outlined-basic"
+                        id="employer-zip-code"
                         label="Employer Zip Code"
                         required
                         type="number"

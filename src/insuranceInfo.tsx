@@ -9,13 +9,13 @@ import Radio from "@mui/material/Radio";
 import React from "react";
 
 export default function InsuranceInfo() : JSX.Element {
-    return <Paper elevation={3} variant="outlined">
+    return <Paper elevation={12}>
         <h2>Insurance Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={6}>
                 <TextField
                     fullWidth
-                    id="outlined-basic"
+                    id="insurer-name"
                     label="Insurer"
                     required
                     variant="standard" />
@@ -23,17 +23,17 @@ export default function InsuranceInfo() : JSX.Element {
             <Grid item xs={6}>
                 <TextField
                     fullWidth
-                    id="outlined-basic"
+                    id="insurance-carrier-number"
                     label="Insurance Carrier Number"
                     required
                     variant="standard" />
             </Grid>
             <Grid item xs={12}>
                 <FormControl>
-                    <FormLabel id="demo-radio-buttons-group-label">This policy belongs to:</FormLabel>
+                    <FormLabel id="policy-holder-radio-buttons-group-label">This policy belongs to:</FormLabel>
                     <RadioGroup
                         row
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        id="policy-options-radio-buttons-group-label"
                         defaultValue="myself"
                         name="radio-buttons-group"
                     >

@@ -17,28 +17,30 @@ function App() {
     <div className="App">
         <h1>Medical History Form</h1>
       <header className="App-header">
-          <Paper elevation={5} variant="outlined" sx={{p: 2}}>
-              <PersonalInfo />
-              <br/>
-              <FamilyInfo />
-              <br/>
-              <MedicalHistory />
-              <br/>
-              <EmployerInfo />
-              <br/>
-              <InsuranceInfo />
-              <br/>
-              <HospitalizationInfo />
-              <br/>
-              <SurgeryInfo />
-              <br/>
-              <ImmunizationInfo />
-              <br/>
-              <AppointmentInfo />
-              <br/>
-              <PainInfo />
-          </Paper>
       </header>
+        <body>
+            <Paper elevation={12} sx={{p: 2}}>
+                <PersonalInfo />
+                <br/>
+                <FamilyInfo />
+                <br/>
+                <MedicalHistory />
+                <br/>
+                <EmployerInfo />
+                <br/>
+                <InsuranceInfo />
+                <br/>
+                <HospitalizationInfo />
+                <br/>
+                <SurgeryInfo />
+                <br/>
+                <ImmunizationInfo />
+                <br/>
+                <AppointmentInfo />
+                <br/>
+                <PainInfo />
+            </Paper>
+        </body>
     </div>
   );
 }

@@ -15,17 +15,17 @@ export default function SurgeryInfo() : JSX.Element {
         setValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={3} variant="outlined">
+    return <Paper elevation={12}>
         <h2>Surgery Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <FormControl>
-                    <FormLabel id="demo-radio-buttons-group-label">Have you had surgery before?</FormLabel>
+                    <FormLabel id="surgery-radio-buttons-group-label">Have you had surgery before?</FormLabel>
                     <RadioGroup
                         row
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        id="had-surgery-radio-buttons-group-label"
                         defaultValue="no"
-                        name="radio-buttons-group"
+                        name="had-surgeries-radio-buttons-group"
                         value={value}
                         onChange={handleChange}
                     >
@@ -46,7 +46,7 @@ function ListItem(props: IListItem) {
         return <Grid item>
             <TextField
                 fullWidth
-                id="outlined-basic"
+                id="surgery-list"
                 label="List of Surgeries"
                 maxRows={40}
                 multiline

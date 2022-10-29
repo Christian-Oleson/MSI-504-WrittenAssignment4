@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 
 export default function ImmunizationInfo(): JSX.Element {
-    return  <Paper elevation={3} variant="outlined">
+    return  <Paper elevation={12}>
         <h2>Immunization Information</h2>
         <Grid container padding={1} spacing={1}>
             <ListItem />
@@ -15,7 +15,7 @@ function ListItem() {
     return <Grid item xs={12} sm={12} md={12} lg={12}>
             <TextField
                 fullWidth
-                id="outlined-basic"
+                id="list-of-immunizations"
                 label="List of Immunizations"
                 maxRows={40}
                 multiline

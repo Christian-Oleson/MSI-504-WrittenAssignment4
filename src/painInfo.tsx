@@ -14,17 +14,17 @@ export default function PainInfo(): JSX.Element {
         setValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={3} variant="outlined">
+    return <Paper elevation={12}>
         <h2>Pain Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12}>
                 <FormControl>
-                    <FormLabel id="demo-radio-buttons-group-label">Are you currently having any pain?</FormLabel>
+                    <FormLabel id="pain-options-radio-buttons-group-label">Are you currently having any pain?</FormLabel>
                     <RadioGroup
                         row
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        id="pain-buttons-group-label"
                         defaultValue="no"
-                        name="radio-buttons-group"
+                        name="pain-radio-buttons-group"
                         value={value}
                         onChange={handleChange}
                         >
@@ -48,12 +48,12 @@ function ListItem(props: IListItem) {
 
     if (props.stringValue === "yes") {
         return <FormControl>
-                <FormLabel id="demo-radio-buttons-group-label">What type of pain are you experiencing?</FormLabel>
+                <FormLabel id="pain-types-radio-buttons-group-label">What type of pain are you experiencing?</FormLabel>
                     <RadioGroup
                         row
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        aria-labelledby="pain-type-group-label"
                         defaultValue="no"
-                        name="radio-buttons-group"
+                        name="pain-type-radio-buttons-group"
                         value={painValue}
                         onChange={handleChange}
                     >

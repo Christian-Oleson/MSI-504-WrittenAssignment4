@@ -7,10 +7,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 export default function MedicalHistory(): JSX.Element {
-    return <Paper elevation={3} variant="outlined">
+    return <Paper elevation={12}>
         <h2>Medical History</h2>
         <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} size="small" aria-label="medical history table">
+            <Table sx={{ minWidth: 650 }} size="small" aria-label="medical-history-table">
                 <TableHead>
                     <TableRow>
                         <TableCell>Medical Condition</TableCell>
@@ -21,28 +21,28 @@ export default function MedicalHistory(): JSX.Element {
                 <TableBody>
                     <TableRow>
                         <TableCell component="th" scope="row">Diabetes</TableCell>
-                        <TableCell align="right"><Checkbox color="secondary" /></TableCell>
-                        <TableCell align="right"><Checkbox color="success" /></TableCell>
+                        <TableCell align="right" id="i-have-had-diabetes-cell"><Checkbox color="secondary" id="i-have-had-diabetes" /></TableCell>
+                        <TableCell align="right"><Checkbox color="success" id="family-has-had-diabetes" /></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell component="th" scope="row">Heart Trouble</TableCell>
-                        <TableCell align="right"><Checkbox color="secondary" /></TableCell>
-                        <TableCell align="right"><Checkbox color="success" /></TableCell>
+                        <TableCell align="right" id="i-have-had-heart-trouble-cell"><Checkbox color="secondary" id="i-have-had-heart-trouble" /></TableCell>
+                        <TableCell align="right"><Checkbox color="success" id="family-has-had-heart-trouble" /></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell component="th" scope="row">Cancer</TableCell>
-                        <TableCell align="right"><Checkbox color="secondary" /></TableCell>
-                        <TableCell align="right"><Checkbox color="success" /></TableCell>
+                        <TableCell align="right" id="i-have-had-cancer-cell"><Checkbox color="secondary" id="i-have-had-cancer" /></TableCell>
+                        <TableCell align="right"><Checkbox color="success" id="family-has-had-cancer" /></TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell component="th" scope="row">Seizure</TableCell>
-                        <TableCell align="right"><Checkbox color="secondary" /></TableCell>
-                        <TableCell align="right"><Checkbox color="success" /></TableCell>
+                        <TableCell component="th" scope="row">Seizures</TableCell>
+                        <TableCell align="right" id="i-have-had-seizures-cell"><Checkbox color="secondary" id="i-have-had-seizures" /></TableCell>
+                        <TableCell align="right"><Checkbox color="success" id="family-has-had-seizures" /></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell component="th" scope="row">Fainting</TableCell>
-                        <TableCell align="right"><Checkbox color="secondary" /></TableCell>
-                        <TableCell align="right"><Checkbox color="success" /></TableCell>
+                        <TableCell align="right" id="i-have-had-fainting-cell"><Checkbox color="secondary" id="i-have-had-fainting" /></TableCell>
+                        <TableCell align="right"><Checkbox color="success" id="family-has-had-fainting" /></TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
