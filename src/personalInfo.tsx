@@ -3,7 +3,7 @@ import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 
 export default function PersonalInfo() : JSX.Element {
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Personal Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={6} sm={4} md={4}>
@@ -12,7 +12,7 @@ export default function PersonalInfo() : JSX.Element {
                     id="first-name"
                     label="First Name"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -20,7 +20,7 @@ export default function PersonalInfo() : JSX.Element {
                     id="last-name"
                     label="Last Name"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -29,7 +29,7 @@ export default function PersonalInfo() : JSX.Element {
                     label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Birthdate"
                     required
                     type="date"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -38,7 +38,7 @@ export default function PersonalInfo() : JSX.Element {
                     label="Social Security Number"
                     required
                     type="number"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -47,7 +47,7 @@ export default function PersonalInfo() : JSX.Element {
                     label="Phone Number"
                     required
                     type="tel"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid xs={6} sm={4} md={4}>
             </Grid>
@@ -57,14 +57,14 @@ export default function PersonalInfo() : JSX.Element {
                     id="address-line-1"
                     label="Address Line 1"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="address-line-2"
                     label="Address Line 2"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid xs={6} sm={4} md={4}>
             </Grid>
@@ -74,7 +74,7 @@ export default function PersonalInfo() : JSX.Element {
                     id="city"
                     label="City"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -82,7 +82,7 @@ export default function PersonalInfo() : JSX.Element {
                     id="state"
                     label="State"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6} sm={4} md={4}>
                 <TextField
@@ -91,7 +91,7 @@ export default function PersonalInfo() : JSX.Element {
                     label="Zip Code"
                     required
                     type="number"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
         </Grid>
         <br/>

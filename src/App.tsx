@@ -19,7 +19,7 @@ function App() {
       <header className="App-header">
       </header>
         <body>
-            <Paper elevation={12} sx={{p: 2}}>
+            <Paper elevation={12} sx={{p: 2, backgroundColor: "#e8eaed"}}>
                 <PersonalInfo />
                 <br/>
                 <FamilyInfo />

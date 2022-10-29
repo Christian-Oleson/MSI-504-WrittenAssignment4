@@ -15,7 +15,7 @@ export default function HospitalizationInfo() : JSX.Element {
         setHValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Hospitalization Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -51,7 +51,7 @@ function ListItem(props: IListItem) {
                 maxRows={40}
                 multiline
                 placeholder="Submit your hospitalizations, one per line, with a date MM-YYYY"
-                variant="standard" />
+                variant="outlined" />
         </Grid>
     }
 

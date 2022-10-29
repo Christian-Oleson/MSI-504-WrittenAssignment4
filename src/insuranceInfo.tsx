@@ -9,7 +9,7 @@ import Radio from "@mui/material/Radio";
 import React from "react";
 
 export default function InsuranceInfo() : JSX.Element {
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Insurance Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={6}>
@@ -18,7 +18,7 @@ export default function InsuranceInfo() : JSX.Element {
                     id="insurer-name"
                     label="Insurer"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={6}>
                 <TextField
@@ -26,7 +26,7 @@ export default function InsuranceInfo() : JSX.Element {
                     id="insurance-carrier-number"
                     label="Insurance Carrier Number"
                     required
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={12}>
                 <FormControl>

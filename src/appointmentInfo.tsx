@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 
 export default function AppointmentInfo(): JSX.Element {
-    return  <Paper elevation={12}>
+    return  <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Appointment Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -12,7 +12,7 @@ export default function AppointmentInfo(): JSX.Element {
                     fullWidth
                     id="last-exam-date"
                     type="date"
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <TextField
@@ -21,7 +21,7 @@ export default function AppointmentInfo(): JSX.Element {
                     label="Why are you seeing the doctor today?"
                     maxRows={40}
                     multiline
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <TextField
@@ -30,7 +30,7 @@ export default function AppointmentInfo(): JSX.Element {
                     label="Who referred you?"
                     maxRows={40}
                     multiline
-                    variant="standard" />
+                    variant="outlined" />
             </Grid>
         </Grid>
     </Paper>

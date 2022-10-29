@@ -14,7 +14,7 @@ export default function PainInfo(): JSX.Element {
         setValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Pain Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12}>
@@ -64,7 +64,7 @@ function ListItem(props: IListItem) {
                             fullWidth
                             id="outlined-basic"
                             label="How long does your pain last?"
-                            variant="standard" />
+                            variant="outlined" />
             </FormControl>
     }
 

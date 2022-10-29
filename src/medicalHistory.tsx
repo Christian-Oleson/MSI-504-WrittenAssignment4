@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 export default function MedicalHistory(): JSX.Element {
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Medical History</h2>
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="medical-history-table">

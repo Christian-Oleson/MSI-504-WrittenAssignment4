@@ -15,7 +15,7 @@ export default function EmployerInfo() : JSX.Element {
         setEmployerValue((event.target as HTMLInputElement).value);
     };
 
-    return <Paper elevation={12}>
+    return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Employer Information</h2>
         <Grid container padding={1} spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -49,14 +49,14 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                     id="employer-name"
                     label="Employer Name"
                     required
-                    variant="standard" />
+                    variant="outlined" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="outlined-basic"
                         label="Employer Phone"
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
                 <Grid xs={6} sm={4} md={4}>
                 </Grid>
@@ -66,14 +66,14 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         id="employer-address-line-1"
                         label="Employer Address Line 1"
                         required
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-address-line-2"
                         label="Employer Address Line 2"
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
                 <Grid xs={6} sm={4} md={4}>
                 </Grid>
@@ -83,7 +83,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         id="employer-city"
                         label="Employer City"
                         required
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
@@ -91,7 +91,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         id="employer-state"
                         label="Employer State"
                         required
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
                 <Grid item xs={6} sm={4} md={4}>
                     <TextField
@@ -100,7 +100,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         label="Employer Zip Code"
                         required
                         type="number"
-                        variant="standard" />
+                        variant="outlined" />
                 </Grid>
             </>
     }
