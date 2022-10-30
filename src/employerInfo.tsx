@@ -43,24 +43,24 @@ export default function EmployerInfo() : JSX.Element {
 function EmployerDetails(props: IListItem) : JSX.Element {
     if (props.stringValue === "yes") {
         return <>
-                <Grid item xs={6} sm={4} md={4}>
+            <Grid item xs={12} sm={4} md={4}>
                 <TextField
                     fullWidth
                     id="employer-name"
                     label="Employer Name"
                     required
                     variant="outlined" />
-                </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+            </Grid>
+            <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="outlined-basic"
                         label="Employer Phone"
                         variant="outlined" />
                 </Grid>
-                <Grid xs={6} sm={4} md={4}>
+                <Grid xs={0} sm={4} md={4}>
                 </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+                <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-address-line-1"
@@ -68,16 +68,16 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         required
                         variant="outlined" />
                 </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+                <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-address-line-2"
                         label="Employer Address Line 2"
                         variant="outlined" />
                 </Grid>
-                <Grid xs={6} sm={4} md={4}>
+                <Grid xs={0} sm={4} md={4}>
                 </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+                <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-city"
@@ -85,7 +85,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         required
                         variant="outlined" />
                 </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+                <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-state"
@@ -93,7 +93,7 @@ function EmployerDetails(props: IListItem) : JSX.Element {
                         required
                         variant="outlined" />
                 </Grid>
-                <Grid item xs={6} sm={4} md={4}>
+                <Grid item xs={12} sm={4} md={4}>
                     <TextField
                         fullWidth
                         id="employer-zip-code"
