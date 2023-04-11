@@ -89,3 +89,6 @@ typings/
 
 # build files
 build
+
+# JetBrains
+.idea*
