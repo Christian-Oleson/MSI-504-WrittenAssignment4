@@ -1,25 +1,25 @@
 {
   "name": "form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@fontsource/roboto": "^5.0.8",
-    "@mui/material": "^5.14.14",
-    "@testing-library/jest-dom": "^6.1.4",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.5.1",
-    "@types/jest": "^29.5.6",
-    "@types/node": "^20.8.7",
-    "@types/react": "^18.2.31",
-    "@types/react-dom": "^18.2.14",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@mui/material": "^5.16.7",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "create-react-app": "^5.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "typescript": "^5.2.2",
-    "web-vitals": "^3.5.0"
+    "typescript": "^5.5.4",
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +48,6 @@
   "main": "index.js",
   "repository": "git@github.com:Christian-Oleson/MSI-504-WrittenAssignment4.git",
   "author": "Christian Oleson <christian.oleson@imaginelearning.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@4.4.0"
 }
