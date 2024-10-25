@@ -3,23 +3,23 @@
   "version": "0.1.2",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@fontsource/roboto": "^5.0.14",
-    "@mui/material": "^5.16.7",
-    "@testing-library/jest-dom": "^6.4.8",
-    "@testing-library/react": "^16.0.0",
+    "@fontsource/roboto": "^5.1.0",
+    "@mui/material": "^6.1.5",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^22.2.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "create-react-app": "^5.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "typescript": "^5.5.4",
-    "web-vitals": "^4.2.3"
+    "typescript": "^5.6.3",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,5 +49,5 @@
   "repository": "git@github.com:Christian-Oleson/MSI-504-WrittenAssignment4.git",
   "author": "Christian Oleson <christian.oleson@imaginelearning.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.5.1"
 }
