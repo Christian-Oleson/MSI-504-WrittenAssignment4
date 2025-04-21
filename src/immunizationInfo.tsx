@@ -1,6 +1,7 @@
 import { Paper } from "@mui/material"
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
+import {JSX} from "react";
 
 export default function ImmunizationInfo(): JSX.Element {
     return  <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
@@ -12,7 +13,7 @@ export default function ImmunizationInfo(): JSX.Element {
 }
 
 function ListItem() {
-    return <Grid item xs={12} sm={12} md={12} lg={12}>
+    return <Grid size={12}>
             <TextField
                 fullWidth
                 id="list-of-immunizations"

@@ -5,7 +5,7 @@ import FormLabel from "@mui/material/FormLabel";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
-import React from "react";
+import React, {JSX} from "react";
 import TextField from "@mui/material/TextField";
 
 export default function SurgeryInfo() : JSX.Element {
@@ -17,8 +17,8 @@ export default function SurgeryInfo() : JSX.Element {
 
     return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Surgery Information</h2>
-        <Grid container padding={1} spacing={1}>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
+        <Grid container spacing={1} sx={{ p: 1 }}>
+            <Grid size={12}>
                 <FormControl>
                     <FormLabel id="surgery-radio-buttons-group-label">Have you had surgery before?</FormLabel>
                     <RadioGroup
@@ -34,7 +34,7 @@ export default function SurgeryInfo() : JSX.Element {
                     </RadioGroup>
                 </FormControl>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Grid size={12}>
                 <ListItem stringValue={value} />
             </Grid>
         </Grid>
@@ -43,7 +43,7 @@ export default function SurgeryInfo() : JSX.Element {
 
 function ListItem(props: IListItem) {
     if (props.stringValue === "yes") {
-        return <Grid item>
+        return <Grid>
             <TextField
                 fullWidth
                 id="surgery-list"

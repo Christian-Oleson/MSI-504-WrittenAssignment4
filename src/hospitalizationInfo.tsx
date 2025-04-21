@@ -5,7 +5,7 @@ import FormLabel from "@mui/material/FormLabel";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
-import React from "react";
+import React, {JSX} from "react";
 import TextField from "@mui/material/TextField";
 
 export default function HospitalizationInfo() : JSX.Element {
@@ -18,7 +18,7 @@ export default function HospitalizationInfo() : JSX.Element {
     return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Hospitalization Information</h2>
         <Grid container padding={1} spacing={1}>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Grid size={12}>
                 <FormControl>
                     <FormLabel id="hosp-radio-buttons-group-label">Have you ever been hospitalized?</FormLabel>
                     <RadioGroup
@@ -34,7 +34,7 @@ export default function HospitalizationInfo() : JSX.Element {
                     </RadioGroup>
                 </FormControl>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Grid size={12}>
                 <ListItem stringValue={hValue} />
             </Grid>
         </Grid>
@@ -43,7 +43,7 @@ export default function HospitalizationInfo() : JSX.Element {
 
 function ListItem(props: IListItem) {
     if (props.stringValue === "yes") {
-        return <Grid item>
+        return <Grid>
             <TextField
                 fullWidth
                 id="list-of-hospitalizations"

@@ -5,6 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import {JSX} from "react";
 
 export default function MedicalHistory(): JSX.Element {
     return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>

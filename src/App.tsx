@@ -15,11 +15,11 @@ import { Button } from '@mui/material';
 
 function App() {
     return (
-    <div className="App">
+        <>
         <h1>Medical History Form</h1>
       <header className="App-header">
       </header>
-        <body>
+        <body className="App">
             <Paper elevation={12} sx={{p: 2, backgroundColor: "#e8eaed"}}>
                 <PersonalInfo />
                 <br/>
@@ -50,7 +50,7 @@ function App() {
                 </Paper>
             </Paper>
         </body>
-    </div>
+        </>
   );
 }
 
