@@ -89,6 +89,10 @@ typings/
 
 # build files
 build
+dist
+
+# rstest
+.rstest-temp
 
 # JetBrains
 .idea*
