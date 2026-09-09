@@ -1,3 +1,1 @@
-/// <reference types="react-scripts" />
-
-declare module '*.css';
+/// <reference types="@rsbuild/core/types" />
