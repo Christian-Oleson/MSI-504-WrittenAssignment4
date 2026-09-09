@@ -54,5 +54,5 @@
   "repository": "git@github.com:Christian-Oleson/MSI-504-WrittenAssignment4.git",
   "author": "Christian Oleson <christian.oleson@imaginelearning.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.18.0"
 }
