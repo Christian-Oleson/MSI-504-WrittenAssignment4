@@ -11,7 +11,7 @@ import React, {JSX} from "react";
 export default function InsuranceInfo() : JSX.Element {
     return <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Insurance Information</h2>
-        <Grid container padding={1} spacing={1}>
+        <Grid container sx={{ p: 1 }} spacing={1}>
             <Grid size={{xs: 12, sm: 6, md: 12}}>
                 <TextField
                     fullWidth

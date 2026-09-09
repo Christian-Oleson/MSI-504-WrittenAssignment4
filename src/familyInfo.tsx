@@ -6,7 +6,7 @@ import {JSX} from "react";
 export default function FamilyInfo(): JSX.Element {
     return  <Paper elevation={12} sx={{p: 2, backgroundColor: "#F8F8F8"}}>
         <h2>Family Information</h2>
-        <Grid container padding={1} spacing={1}>
+        <Grid container sx={{ p: 1 }} spacing={1}>
             <Grid size={12}>
                 <TextField
                     fullWidth
