@@ -1140,9 +1140,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rstest/core@npm:^0.12.4":
-  version: 0.12.4
-  resolution: "@rstest/core@npm:0.12.4"
+"@rstest/core@npm:^0.12.5":
+  version: 0.12.5
+  resolution: "@rstest/core@npm:0.12.5"
   dependencies:
     "@rsbuild/core": "npm:~2.2.13"
     "@types/chai": "npm:^5.2.3"
@@ -1157,7 +1157,7 @@ __metadata:
       optional: true
   bin:
     rstest: ./bin/rstest.js
-  checksum: 10c0/93094db1a4ba402efd98a991652b5ffc27f08e04c43077cd55e0505f7c2c249a4d51ade44f7f07e1aa7b33116ba3dc863f7736b70b94abcf270e2d2df112e286
+  checksum: 10c0/01033208d93a9e02b844672656352b028361650461d074bab5d9b68a647dee78b06a470ff28d06462f34d0b8e3481bcd4056bb045f384b05b4e73ced68a82674
   languageName: node
   linkType: hard
 
@@ -1740,7 +1740,7 @@ __metadata:
     "@rsbuild/core": "npm:^2.2.14"
     "@rsbuild/plugin-react": "npm:^2.1.1"
     "@rsbuild/plugin-type-check": "npm:^1.6.1"
-    "@rstest/core": "npm:^0.12.4"
+    "@rstest/core": "npm:^0.12.5"
     "@testing-library/dom": "npm:^10.4.2"
     "@testing-library/jest-dom": "npm:^7.0.1"
     "@testing-library/react": "npm:^16.3.3"
