@@ -15,7 +15,7 @@
     "@rsbuild/core": "^2.2.14",
     "@rsbuild/plugin-react": "^2.1.1",
     "@rsbuild/plugin-type-check": "^1.6.1",
-    "@rstest/core": "^0.12.4",
+    "@rstest/core": "^0.12.5",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
